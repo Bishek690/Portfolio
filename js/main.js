@@ -21,6 +21,13 @@ navBar.forEach(function (a) {
     })
 })
 
+// Certificate Modal
+function openModal(imgElement) {
+  document.getElementById('modalImage').src = imgElement.src;
+  var myModal = new bootstrap.Modal(document.getElementById('certificateModal'));
+  myModal.show();
+}
+
 // EmailJS
 
   emailjs.init("TcVCPEa3CupXLV2BY"); 

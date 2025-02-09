@@ -331,58 +331,74 @@
     <!-- About Section End -->
 
     <!-- Certificate Section -->
-<section id="certificates" class="certificate-section py-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center mb-2">
-        <p class="subtitle">Recognitions and Achievements</p>
-        <h2>Certificates</h2>
-      </div>
-    </div>
-    <div class="row g-4">
-      <!-- Certificate Card 1 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="certificate-card p-3 shadow-sm">
-          <img src="images/certificate/certificate1.jpg" class="img-fluid" alt="Certificate 1" />
-          <h6 class="mt-3">Web Development</h6>
-          <p>Issued by Udemy</p>
+    <section id="certificates" class="certificate-section py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-2">
+            <p class="subtitle">Recognitions and Achievements</p>
+            <h2>Certificates</h2>
+          </div>
+        </div>
+        <div class="row g-4">
+          <!-- Certificate Card 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="certificate-card p-3 shadow-sm">
+              <img src="images/certificate/certificate1.jpg" class="img-fluid certificate-img" alt="Certificate 1" onclick="openModal(this)">
+              <h6 class="mt-3">Web Development</h6>
+              <p>Issued by Udemy</p>
+            </div>
+          </div>
+          <!-- Certificate Card 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="certificate-card p-3 shadow-sm">
+              <img src="images/certificate/JavaScript.jpg" class="img-fluid certificate-img" alt="Certificate 2" onclick="openModal(this)">
+              <h6 class="mt-3">JavaScript</h6>
+              <p>Issued by Udemy</p>
+            </div>
+          </div>
+          <!-- Certificate Card 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="certificate-card p-3 shadow-sm">
+              <img src="images/certificate/Mern Stack.jpg" class="img-fluid certificate-img" alt="Certificate 3" onclick="openModal(this)">
+              <h6 class="mt-3">MERN Stack App Development</h6>
+              <p>Issued by Mind Luster</p>
+            </div>
+          </div> 
+          <!-- Certificate Card 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="certificate-card p-3 shadow-sm">
+              <img src="images/certificate/UI.jpg" class="img-fluid certificate-img" alt="Certificate 4" onclick="openModal(this)">
+              <h6 class="mt-3">UI/UX Design</h6>
+              <p>Issued by ISMT College</p>
+            </div>
+          </div> 
+          <!-- Certificate Card 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="certificate-card p-3 shadow-sm">
+              <img src="images/certificate/Pythan.jpg" class="img-fluid certificate-img" alt="Certificate 5" onclick="openModal(this)">
+              <h6 class="mt-3">Python Crash Basic</h6>
+              <p>Issued by Mind Luster</p>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- Certificate Card 2 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="certificate-card p-3 shadow-sm">
-          <img src="images/certificate/JavaScript.jpg" class="img-fluid" alt="Certificate 2" />
-          <h6 class="mt-3">JavaScript</h6>
-          <p>Issued by Udemy</p>
-        </div>
+    </section>
+
+    <!-- Modal -->
+<div id="certificateModal" class="modal fade" tabindex="-1" aria-labelledby="certificateModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="certificateModalLabel">Certificate</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <!-- Certificate Card 3 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="certificate-card p-3 shadow-sm">
-          <img src="images/certificate/Mern Stack.jpg" class="img-fluid" alt="Certificate 3" />
-          <h6 class="mt-3">MERN Stack App Development</h6>
-          <p>Issued by Mind Luster</p>
-        </div>
-      </div> 
-      <!-- Certificate Card 4 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="certificate-card p-3 shadow-sm">
-          <img src="images/certificate/UI.jpg" class="img-fluid" alt="Certificate 3" />
-          <h6 class="mt-3">UI/UX Design</h6>
-          <p>Issued by ISMT College</p>
-        </div>
-      </div> 
-      <!-- Certificate Card 5 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="certificate-card p-3 shadow-sm">
-          <img src="images/certificate/Pythan.jpg" class="img-fluid" alt="Certificate 3" />
-          <h6 class="mt-3">Python Crash Basic</h6>
-          <p>Issued by Mind Luster</p>
-        </div>
+      <div class="modal-body text-center">
+        <img id="modalImage" class="img-fluid" src="" alt="Certificate Preview" style="max-width: 100%; max-height: 90vh; object-fit: contain;">
       </div>
     </div>
   </div>
-</section>
+</div>
+ <!-- Certificate Section End -->
 
 
     <!-- Services Section -->
