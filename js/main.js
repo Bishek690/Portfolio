@@ -36,7 +36,7 @@ function openModal(imgElement) {
     event.preventDefault(); 
 
     const form = event.target;
-    const submitButton = form.querySelector('button[type="submit"]'); // Fixed typo: 'from' to 'form'
+    const submitButton = form.querySelector('button[type="submit"]');
     submitButton.disabled = true;
     submitButton.textContent = "Sending..."; 
 
