@@ -69,3 +69,6 @@ function openModal(imgElement) {
 
   // Attach the event listener to the form
   document.querySelector("form").addEventListener("submit", sendEmail);
+
+  // Update the current year in the footer
+  document.getElementById('current-year').textContent = new Date().getFullYear();
