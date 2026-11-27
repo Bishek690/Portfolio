@@ -66,6 +66,7 @@ function openModal(imgElement) {
         }
       );
   }
+  
 
   // Attach the event listener to the form
   document.querySelector("form").addEventListener("submit", sendEmail);
